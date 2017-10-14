@@ -4,6 +4,9 @@ python:
 install:
 - /opt/python/3.6.3/bin/python -m venv /home/travis/build/mikicz/travis-venv-test 
 - /opt/python/3.6.3/bin/pip freeze
+- /home/travis/build/mikicz/travis-venv-test/bin/python -m pip freeze
+- /home/travis/build/mikicz/travis-venv-test/bin/python -m pip install arca
+- /opt/python/3.6.3/bin/pip freeze
 script:
 - /home/travis/build/mikicz/travis-venv-test/bin/python -m pip freeze
 notifications:
