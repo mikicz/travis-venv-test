@@ -5,7 +5,7 @@ install:
 - python -m venv /home/travis/build/mikicz/travis-venv-test 
 - pip freeze
 script:
-- /home/travis/build/mikicz/travis-venv-test/bin/pip freeze
+- /home/travis/build/mikicz/travis-venv-test/bin/python -m pip freeze
 notifications:
   email: false
 
