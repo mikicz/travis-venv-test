@@ -2,13 +2,12 @@ language: python
 python:
 - '3.6'
 install:
-- /opt/python/3.6.3/bin/python -m venv /home/travis/build/mikicz/travis-venv-test 
-- /opt/python/3.6.3/bin/pip freeze
+- python -m venv /home/travis/build/mikicz/travis-venv-test 
+- python -m pip freeze
 - /home/travis/build/mikicz/travis-venv-test/bin/python -m pip freeze
 - /home/travis/build/mikicz/travis-venv-test/bin/python -m pip install arca
-- /opt/python/3.6.3/bin/pip freeze
+- python -m pip freeze
 script:
 - /home/travis/build/mikicz/travis-venv-test/bin/python -m pip freeze
 notifications:
   email: false
-sudo: required
